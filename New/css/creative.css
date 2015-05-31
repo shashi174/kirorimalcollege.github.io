@@ -83,7 +83,6 @@ aside {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -174,12 +173,12 @@ aside {
 }
 
 header {
-   position: relative;
+    position: relative;
     width: 100%;
     min-height: auto;
     text-align: center;
     color: #000;
-   /* background-image: url(../img/header.jpg);*/
+    background-image: url(../img/header.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
