@@ -17,13 +17,15 @@ body {
 
 .list-unstyled > li {
     padding-top:2px;
-     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    text-decoration: none;
 }
 
 .list-unstyled-bg-dark > li {
     padding-top:2px;
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
     color: #fff;
+    text-decoration: none;
 }
 
 hr {
@@ -42,6 +44,21 @@ a {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    text-decoration: none;
+}
+
+.external-links > ul > li > a {
+    color:#f05f40;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+     text-decoration: none;
+}
+
+.external-links > ul > li > a:hover,
+.external-links > ul > li > a:focus {
+    color: #fff;
+     text-decoration: none;
 }
 
 a:hover,
@@ -261,18 +278,7 @@ aside {
         background-color: #fff;
     }
 
-    /* Again added by me. For the purpose of adding color to hover text and background
-    .navbar-default .navbar-nav .open .dropdown-menu:hover > a,
-    .navbar-default .navbar-nav .open .dropdown-menu:focus > a{
-
-        .navbar-default .navbar-nav .open  .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
-                                                                                                         background-color: #000;
-                                                                                                         font-color: #fff;
-    }*/
-
-/*My snippet ends here*/
-
-    .navbar-default.affix .navbar-header .navbar-brand {
+   .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
         color: #f05f40;
     }
