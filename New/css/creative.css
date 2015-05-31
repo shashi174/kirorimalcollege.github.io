@@ -153,7 +153,7 @@ aside {
         border-radius:0;
         border-top:solid 2px #72c02c;
         border-bottom:solid 2px #687074;
-        z-index: 9999 !important;
+        z-index:10000 !important;  /*9999*/
 }
 
 .dropdown-menu li a {
@@ -201,7 +201,7 @@ aside {
         filter:none !important;
 }
 
-/*.navbar .btn-navbar {
+.navbar .btn-navbar {
         padding:10px 15px;
         margin-top:1px;
         margin-right:0;
@@ -215,7 +215,7 @@ aside {
 .navbar .btn-navbar:hover span {
         background:#fff !important;
         box-shadow:none !important;
-}*/
+}
 
 .navbar .nav > li > .dropdown-menu:after {
         left:19px;
@@ -651,4 +651,9 @@ body > .container {
 
 code {
   font-size: 80%;
+}
+
+/** Code for fixing the navbar in mobile view issue **/
+.dropdown-backdrop {
+    position: static;
 }
