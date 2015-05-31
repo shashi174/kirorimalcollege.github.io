@@ -15,6 +15,17 @@ body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
+.list-unstyled > li {
+    padding-top:2px;
+     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+.list-unstyled-bg-dark > li {
+    padding-top:2px;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    color: #fff;
+}
+
 hr {
     max-width: 500px;
     border-color: #f05f40;
@@ -26,7 +37,8 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color:#333;
+    /*#f05f40;*/
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -427,7 +439,7 @@ header .header-content .header-content-inner p {
     }
 }
 
-.call-to-action h2 {
+.call-to-action h3 {
     margin: 0 auto 20px;
 }
 
@@ -581,5 +593,19 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #222;
+    webkit-tap-highlight-color: #333;
+}
+
+/* Adding two custom image class called display-picture */
+.display-picture-right{
+    float: right;
+    width: 200px;
+    margin: 5px 20px 5px 0;
+    padding-left: 15px;
+}
+.display-picture-left{
+    float: left;
+    width: 200px;
+    margin: 5px 20px 5px 0;
+    padding-right: 15px;
 }
