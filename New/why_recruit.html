@@ -35,6 +35,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     <link rel="stylesheet" href="css/override.css" type="text/css">
+
+    <!-- Addtional charts.js addition -->
+    <script src="Chart.js"></script>
   </head>
 
   <body id="page-top">
@@ -186,17 +189,38 @@
 
     <section>
       <div class="container">
-        <h3 class="section-heading text-left" id="courses">Courses Offered</h3>
-        <hr align="left" width="18%"><br>
+        <div class="col-lg-8">
+          <h3 class="section-heading text-left" id="demographic">Graduating Batch Demographics</h3>
+          <hr align="left" width="50%"><br>
+          <br><br><br>
+          <div class="text-left">
+            <div id="canvas-holder">
+              <canvas id="chart-area1">
+              </canvas>
+            </div><br><br>
+          </div>
 
-        <div class="col-lg-8 text-center">
-          <div id="canvas-holder">
-            <canvas id="doughnutChart" width="390" height="390" style="width: 390px; height: 390px;">
-            </canvas><br>
+          <div class="row">
+            <div id="canvas-holder" class="pull-left">
+              <canvas id="chart-area3">
+              </canvas>
+            </div>
+            <div id="canvas-holder" class="pull-left">
+              <canvas id="chart-area2">
+              </canvas>
+            </div>
+          </div>
+<br><br>
+          <div class="text-center">
+            <div id="canvas-holder">
+              <canvas id="income">
+              </canvas><br>
+            </div>
           </div>
         </div>
-
         <div class="col-lg-4">
+          <h3 class="section-heading text-left" id="courses">Courses Offered</h3>
+          <hr align="left" width="55%"><br>
           <p class="text-center"><b>Arts:</b></p>
           <table class="table table-condensed">
             <tr>
@@ -407,57 +431,6 @@
     <script src="js/Chart.min.js"></script>
     <script src="js/Chart.js"></script>
     <script type="text/javascript" src="js/custom-chartjs.js"></script>
-    <!-- <script> -->
-      <!-- var doughnutData = [ -->
-      <!-- { -->
-      <!-- value: 300, -->
-      <!-- color:"#F7464A", -->
-      <!-- highlight: "#FF5A5E", -->
-      <!-- label: "Red" -->
-      <!-- }, -->
-      <!-- { -->
-      <!-- value: 50, -->
-      <!-- color: "#46BFBD", -->
-      <!-- highlight: "#5AD3D1", -->
-      <!-- label: "Green" -->
-      <!-- }, -->
-      <!-- { -->
-      <!-- value: 100, -->
-      <!-- color: "#FDB45C", -->
-      <!-- highlight: "#FFC870", -->
-      <!-- label: "Yellow" -->
-      <!-- }, -->
-      <!-- { -->
-      <!-- value: 40, -->
-      <!-- color: "#949FB1", -->
-      <!-- highlight: "#A8B3C5", -->
-      <!-- label: "Grey" -->
-      <!-- }, -->
-      <!-- { -->
-      <!-- value: 120, -->
-      <!-- color: "#4D5360", -->
-      <!-- highlight: "#616774", -->
-      <!-- label: "Dark Grey" -->
-      <!-- } -->
-
-      <!-- ]; -->
-<!--       window.onload = function(){ -->
-<!--       var ctx = document.getElementById("chart-area").getContext("2d"); -->
-<!--       window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true}); -->
-<!--       }; -->
-<!--       var pieOptions = { -->
-<!--       segmentShowStroke : false, -->
-<!--       animateScale : true -->
-<!--       } -->
-<!--       var width = $('canvas').parent().width(); -->
-<!-- $('canvas').attr("width",width); -->
-<!-- new Chart(ctx).Line(data,options); -->
-<!-- window.onresize = function(event){ -->
-<!--     var width = $('canvas').parent().width(); -->
-<!--     $('canvas').attr("width",width); -->
-<!--     new Chart(ctx).Line(data,options); -->
-<!-- }; -->
-    <!-- </script> -->
 
   </body>
 
