@@ -30,3 +30,13 @@ aside {
     color: #fff;
     box-shadow: inset 0 0 9px #281A1A;
 }
+
+table, th, tr, td {
+    border: 2px solid #f05f40 !important;
+}
+
+canvas{
+    width: 100% !important;
+    /* max-width: 400px; */
+    height: auto !important;
+}
