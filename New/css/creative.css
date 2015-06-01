@@ -52,13 +52,13 @@ a {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-     text-decoration: none;
+    text-decoration: none;
 }
 
 .external-links > ul > li > a:hover,
 .external-links > ul > li > a:focus {
     color:#f05f40;
-     text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover,
@@ -146,88 +146,88 @@ aside {
 }
 /*Dropdown Menu*/
 .navbar-default .navbar-nav .open .dropdown-menu {
-        padding:0;
-        border:none;
-        margin-top:-2px;
-        min-width:200px;
-        border-radius:0;
-        border-top:solid 2px #72c02c;
-        border-bottom:solid 2px #687074;
-        z-index:10000 !important;  /*9999*/
+    padding:0;
+    border:none;
+    margin-top:-2px;
+    min-width:200px;
+    border-radius:0;
+    border-top:solid 2px #72c02c;
+    border-bottom:solid 2px #687074;
+    z-index:10000 !important;  /*9999*/
 }
 
 .dropdown-menu li a {
-        color:#687074;
-        font-size:13px;
-        font-weight:400;
-        padding:6px 15px;
-        border-bottom:solid 1px #eee;
+    color:#687074;
+    font-size:13px;
+    font-weight:400;
+    padding:6px 15px;
+    border-bottom:solid 1px #eee;
 }
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
-  color:#ffffff;
-  background:rgba(0,0,0,.8) !important;
+    color:#ffffff;
+    background:rgba(0,0,0,.8) !important;
     -webkit-transition:all 0.2s ease-in-out;
     -moz-transition:all 0.2s ease-in-out;
     -o-transition:all 0.2s ease-in-out;
     transition:all 0.2s ease-in-out;
-        filter:none !important;
+    filter:none !important;
 }
 
 .dropdown-menu li.sub-heading a {
-        font-weight: 700;
-        font-size: 11px;
-        border-bottom:solid 2px #333;
-        padding: 1px 5px;
+    font-weight: 700;
+    font-size: 11px;
+    border-bottom:solid 2px #333;
+    padding: 1px 5px;
 
 }
 .dropdown-menu li.sub-heading a:hover,
 .dropdown-menu li.sub-heading a:focus {
-  color:#687074 !important;
-  background:#ffffff !important;
+    color:#687074 !important;
+    background:#ffffff !important;
     -webkit-transition:all 0.2s ease-in-out;
     -moz-transition:all 0.2s ease-in-out;
     -o-transition:all 0.2s ease-in-out;
     transition:all 0.2s ease-in-out;
-        filter:none !important;
+    filter:none !important;
 }
 
 
 
 .dropdown-menu .active > a {
-        color:#ffffff !important;
-        background:#687074 !important;
-        filter:none !important;
+    color:#ffffff !important;
+    background:#687074 !important;
+    filter:none !important;
 }
 
 .navbar .btn-navbar {
-        padding:10px 15px;
-        margin-top:1px;
-        margin-right:0;
-        background:#72c02c;
-        border:none !important;
+    padding:10px 15px;
+    margin-top:1px;
+    margin-right:0;
+    background:#72c02c;
+    border:none !important;
 }
 .navbar .btn-navbar:hover {
-        background:#5fb611;
+    background:#5fb611;
 }
 .navbar .btn-navbar span,
 .navbar .btn-navbar:hover span {
-        background:#fff !important;
-        box-shadow:none !important;
+    background:#fff !important;
+    box-shadow:none !important;
 }
 
 .navbar .nav > li > .dropdown-menu:after {
-        left:19px;
+    left:19px;
 }
 .navbar .nav > li > .dropdown-menu:before {
-        left:18px;
-        border-bottom:none;
+    left:18px;
+    border-bottom:none;
 }
 .navbar .nav > li > .dropdown-menu:after {
-        left:19px;
-        border-top-color: #72c02c !important;
-        border-bottom-color: #72c02c !important;
+    left:19px;
+    border-top-color: #72c02c !important;
+    border-bottom-color: #72c02c !important;
 }
 
 /* My custom snippet ends here */
@@ -278,7 +278,7 @@ aside {
         background-color: #fff;
     }
 
-   .navbar-default.affix .navbar-header .navbar-brand {
+    .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
         color: #f05f40;
     }
@@ -617,43 +617,58 @@ body {
 }
 
 /** Sticky footer **/
- html {
-  position: relative;
-  min-height: 100%;
+html {
+    position: relative;
+    min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 .footer {
     position: bottom;
     bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
 }
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 60px 15px 0;
+    padding: 60px 15px 0;
 }
 .container .text-muted {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 code {
-  font-size: 80%;
+    font-size: 80%;
 }
 
 /** Code for fixing the navbar in mobile view issue **/
 .dropdown-backdrop {
     position: static;
+}
+
+/* Code for better menu bar color schemes */
+@media (max-width: 767px) {
+    .dropdown-menu li > a:hover,
+    .dropdown-menu li > a:focus,
+    .dropdown-submenu:hover > a {
+         background:rgba(0,0,0,.8) !important;
+        -webkit-transition:all 0.2s ease-in-out;
+        -moz-transition:all 0.2s ease-in-out;
+        -o-transition:all 0.2s ease-in-out;
+        transition:all 0.2s ease-in-out;
+        filter:none !important;
+         color:#ffffff !important;
+    }
 }
