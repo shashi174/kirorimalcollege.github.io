@@ -44,23 +44,6 @@
 
   //   // Custom chart Js code starts here
 
-  //   // 1. Bar Charts
-  //   var barChartData = {
-  //     labels : ["January","February","March","April","May","June","July"],
-  //     datasets : [
-  //       {
-  //         fillColor : $dark_blue,
-  //         strokeColor : $dark_blue,
-  //         data : [65,59,90,81,56,55,40]
-  //       },
-  //       {
-  //         fillColor : $gplus,
-  //         strokeColor : $gplus,
-  //         data : [28,48,40,19,96,27,100]
-  //       }
-  //     ]
-  //   }
-  //   var myLine = new Chart(document.getElementById("barChart").getContext("2d")).Bar(barChartData);
 
   //   // 2 Line Chart
   //   var lineChartData = {
@@ -159,7 +142,7 @@
 
   // 6. Doughnut
 
-  var doughnutData = [
+  var doughnutData1 = [
     {
       value: 300,
       color:"#F7464A",
@@ -193,6 +176,102 @@
 
   ];
 
+  var doughnutData2 = [
+    {
+      value: 300,
+      color:"#F7464A",
+      highlight: "#FF5A5E",
+      label: "Red"
+    },
+    {
+      value: 50,
+      color: "#46BFBD",
+      highlight: "#5AD3D1",
+      label: "Green"
+    },
+    {
+      value: 100,
+      color: "#FDB45C",
+      highlight: "#FFC870",
+      label: "Yellow"
+    },
+    {
+      value: 40,
+      color: "#949FB1",
+      highlight: "#A8B3C5",
+      label: "Grey"
+    },
+    {
+      value: 120,
+      color: "#4D5360",
+      highlight: "#616774",
+      label: "Dark Grey"
+    }
+
+  ];
+
+  var pieData1 = [
+    {
+      value: 300,
+      color:"#F7464A",
+      highlight: "#FF5A5E",
+      label: "Red"
+    },
+    {
+      value: 50,
+      color: "#46BFBD",
+      highlight: "#5AD3D1",
+      label: "Green"
+    },
+    {
+      value: 100,
+      color: "#FDB45C",
+      highlight: "#FFC870",
+      label: "Yellow"
+    },
+    {
+      value: 40,
+      color: "#949FB1",
+      highlight: "#A8B3C5",
+      label: "Grey"
+    },
+    {
+      value: 120,
+      color: "#4D5360",
+      highlight: "#616774",
+      label: "Dark Grey"
+    }
+
+  ];
+
+
+  // 1. Bar Charts
+  // var data = {
+  //   labels: ["January", "February", "March", "April", "May", "June", "July"],
+  //   datasets: [
+  //     {
+  //       label: "My First dataset",
+  //       fillColor: "rgba(220,220,220,0.5)",
+  //       strokeColor: "rgba(220,220,220,0.8)",
+  //       highlightFill: "rgba(220,220,220,0.75)",
+  //       highlightStroke: "rgba(220,220,220,1)",
+  //       data: [65, 59, 80, 81, 56, 55, 40]
+  //     },
+  //     {
+  //       label: "My Second dataset",
+  //       fillColor: "rgba(151,187,205,0.5)",
+  //       strokeColor: "rgba(151,187,205,0.8)",
+  //       highlightFill: "rgba(151,187,205,0.75)",
+  //       highlightStroke: "rgba(151,187,205,1)",
+  //       data: [28, 48, 40, 19, 86, 27, 90]
+  //     }
+  //   ]
+  // };
+
+  // var ctx4 = document.getElementById("chart-area4").getContext("2d");
+  // var myBarChart = new Chart(ctx4).Bar(data, options);
+
+
   // var doughnutData = [
   //   {
   //     value: 30,
@@ -219,12 +298,50 @@
 
   // var myDoughnut = new Chart(document.getElementById("doughnutChart").getContext("2d")).Doughnut(doughnutData);
 
+
+  // bar chart data
+  var barData = {
+    labels : ["January","February","March","April","May","June"],
+    datasets : [
+      {
+        fillColor : "#48A497",
+        strokeColor : "#48A4D1",
+        data : [456,479,324,569,702,600]
+      },
+      {
+        fillColor : "rgba(73,188,170,0.4)",
+        strokeColor : "rgba(72,174,209,0.4)",
+        data : [364,504,605,400,345,320]
+      }
+    ]
+  }
+  // get bar chart canvas
+  var income = document.getElementById("income").getContext("2d");
+  // draw bar chart
+  new Chart(income).Bar(barData);
+
+
   // Custom chart Js code ends here
 
+
+  var ctx1 = document.getElementById("chart-area1").getContext("2d");
+  window.myDoughnut = new Chart(ctx1).Doughnut(doughnutData1, {responsive : true});
+
+  var ctx2 = document.getElementById("chart-area2").getContext("2d");
+  window.myDoughnut = new Chart(ctx2).Doughnut(doughnutData2, {responsive : true});
+
+  var ctx3 = document.getElementById("chart-area3").getContext("2d");
+  window.myPie = new Chart(ctx3).Pie(pieData1, {responsive : true});
+
+
   window.onload = function(){
-    var ctx = document.getElementById("chart-area").getContext("2d");
-    window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
+    ctx1();
+    ctx2();
+    ctx3();
+    ctx4();
   };
+
+
   var pieOptions = {
     segmentShowStroke : false,
     animateScale : true
