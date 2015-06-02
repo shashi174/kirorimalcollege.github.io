@@ -63,7 +63,9 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #F00;
+        /* #eb3812; */
+     text-decoration: none;
 }
 
 h1,

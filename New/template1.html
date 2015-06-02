@@ -18,6 +18,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
     <!-- Font-awesome addition -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -38,6 +39,10 @@
   </head>
 
   <body id="page-top">
+
+
+    <!-------------------------------------------   Navigation Bar starts here --------------------------------------->
+
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -70,46 +75,52 @@
 
             <!-- Why Recruit section -->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Why Recruit?  <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-
-                <li><a href="#">Separated link</a></li>
-
-                <li><a href="#">One more separated link</a></li>
-
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Why Recruit?  <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" data-toggle="collapse" data-target=".nav-collapse">
+                <li><a href="#">Why Recruit?</a></li>
+                <li><a href="#">Demographics</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Alumni</a></li>
               </ul>
             </li>
 
             <!-- For companies section -->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">For companies  <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">For companies  <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-
-                <li><a href="#">Separated link</a></li>
-
-                <li><a href="#">One more separated link</a></li>
-
+                <li class="sub-heading">
+                  <a>Placements</a>
+                </li>
+                <li><a href="for_companies.html#header">Company Registration</a></li>
+                <li><a href="#">Procedure and Policy</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Brochures</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li class="sub-heading">
+                  <a>Internships</a>
+                </li>
+                <li><a href="#">Internships</a></li>
+                <li class="sub-heading">
+                  <a>Downloads</a>
+                </li>
+                <li><a href="#">Campus Recruitement Guide</a></li>
+                <li><a href="#">Job Announcement Form</a></li>
               </ul>
             </li>
 
             <!-- For Students section -->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">For students <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded=""false>For students <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-
-                <li><a href="#">Separated link</a></li>
-
-                <li><a href="#">One more separated link</a></li>
-
+                <li><a href="#">Placement Policy</a></li>
+                <li><a href="#">Internship Policy</a></li>
+                <li><a href="#">Preparation Portal</a></li>
+                <li class="sub-heading">
+                  <a>Downloads</a>
+                </li>
+                <li><a href="#">Feedback form</a></li>
+                <li><a href="#">Festivals</a></li>
               </ul>
             </li>
 
@@ -117,14 +128,8 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact us <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-
-                <li><a href="#">Separated link</a></li>
-
-                <li><a href="#">One more separated link</a></li>
-
+                <li><a href="#">Reach Kirori Mal College </a></li>
+                <li><a href="#">Contacts</a></li>
               </ul>
             </li>
 
@@ -137,6 +142,11 @@
     </nav>
     <br>
     <br>
+
+    <!--------------------------------------------  End of navigation bar -------------------------------------->
+
+    <!----------------------------------------------   Header section  ----------------------------------------->
+
     <header>
       <div class="header-content">
         <div class="header-content-inner">
@@ -144,6 +154,9 @@
       </div>
     </header>
 
+    <!----------------------------------------------  End of header section  ----------------------------------------->
+
+    <!---------------------------------------------- About this website section  ----------------------------------------->
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
@@ -162,114 +175,104 @@
         </div>
       </div>
     </section>
-    <!-- The main top region ends here -->
+
+    <!------------------------------------------    End of about website section  -------------------------------->
 
 
-    <!-- The footer section starts here -->
 
-    <aside class="bg-dark">
-      <div class="container text-center">
-        <div class="call-to-action">
-          <div class="col-lg-4 col-sm-6">
-            <h3 class="section-heading text-left">About Us</h3>
-            <hr align="left" width="50%">
-            <p  class="text-left" style="font-size:smaller">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <h3 class="section-heading text-left">External Links</h3>
-            <hr align="left" width="50%">
-            <div class="external-links">
-              <ul class="list-unstyled text-left">
-                <li><a href="#">Kirori Mal College Home</a></li>
-                <li>
-                  <a href="#">Meet out Team</a>
-                </li>
-                <li>
-                  <a href="#">Company Registration</a>
-                </li>
-                <li>
-                  <a href="#">Placement Process</a>
-                </li>
-              </ul>
-            </div>
-            <br>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <h3 class="section-heading text-left">Contact Us</h3>
-            <hr align="left" width="35%">
-            <p  class="text-left" style="font-size:12px">
-              Avenues, placement cell<br>
-              University of Delhi, North Campus,<br> New Delhi, Delhi 110007
-              <br>
-              Phone:+123456789
-              <div class="external-links">
-                <ul class="list-unstyled text-left" style="font-size:12px">
-                  <li>
-                    Email: <a href="mailto:kmcavenues@gmail.com">kmcavenues@gmail.com</a></li></ul></div>
-            </p>
+<!------------------------------------------------ aside dark class footer starts  ---------------------------------->
 
-            <h3 class="section-heading text-left">Social</h3>
-            <hr align="left" width="35%">
-            <p  class="text-left">
-              <i class="fa fa-twitter fa-2x wow bounceIn"  style="padding-right:12px"></i>
-              <i class="fa fa-facebook fa-2x wow bounceIn" style="padding-right:12px"></i>
-              <i class="fa fa-google-plus fa-2x wow bounceIn" style="padding-right:12px"></i>
-              <i class="fa fa-linkedin fa-2x wow bounceIn" style="padding-right:12px"></i>
-            </p>
-          </div>
-        </div>
+<aside class="bg-dark">
+  <div class="container text-center">
+    <div class="call-to-action">
+      <div class="col-lg-4 col-sm-6">
+        <h3 class="section-heading text-left">About Us</h3>
+        <hr align="left" width="110px">
+        <p  class="text-left" style="font-size:smaller">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
       </div>
-    </aside>
-
-    <!-- End of aside tag -->
-    <!-- Start of contact seciton of the index.html -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 text-center">
-            <h2 class="section-heading">Get In Touch!</h2>
-            <hr class="primary">
-            <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-          </div>
-          <div class="col-lg-4 col-lg-offset-2 text-center">
-            <i class="fa fa-phone fa-3x wow bounceIn">
-
-              <a href="tel:+91-123-456-789" style="font-size:15px"><br><p>123-456-6789</p></a></i>
-          </div>
-          <div class="col-lg-4 text-center">
-            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-            <p><a href="mailto:kmcavenues@gmail.com">kmcavenues@gmail.com</a></p>
-          </div>
+      <div class="col-lg-4 col-sm-6">
+        <h3 class="section-heading text-left">External Links</h3>
+        <hr align="left" width="160px">
+        <div class="external-links">
+          <ul class="list-unstyled text-left">
+            <li><a href="#">Kirori Mal College Home</a></li>
+            <li>
+              <a href="#">Meet out Team</a>
+            </li>
+            <li>
+              <a href="#">Company Registration</a>
+            </li>
+            <li>
+              <a href="#">Placement Process</a>
+            </li>
+          </ul>
         </div>
+        <br>
       </div>
-    </section>
+      <div class="col-lg-4 col-sm-6">
+        <h3 class="section-heading text-left">Contact Us</h3>
+        <hr align="left" width="130px">
+        <p  class="text-left" style="font-size:12px">
+          Avenues, placement cell<br>
+          University of Delhi, North Campus,<br> New Delhi, Delhi 110007
+          <br>
+          Phone:+123456789
+          <div class="external-links">
+            <ul class="list-unstyled text-left" style="font-size:12px">
+              <li>
+                Email: <a href="mailto:kmcavenues@gmail.com">kmcavenues@gmail.com</a></li></ul></div>
+        </p>
 
-    <!-- Footer section for file -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="span8">
-            <p class="text-muted" style="font-size:smaller">2015 © Avenues Placement Cell, Kirori Mal College. All Rights Reserved.
-            </p>
-          </div>
-        </div>
+        <h3 class="section-heading text-left">Social</h3>
+        <hr align="left" width="130px">
+        <p  class="text-left">
+          <i class="fa fa-twitter fa-2x wow bounceIn"  style="padding-right:12px"></i>
+          <i class="fa fa-facebook fa-2x wow bounceIn" style="padding-right:12px"></i>
+          <i class="fa fa-google-plus fa-2x wow bounceIn" style="padding-right:12px"></i>
+          <i class="fa fa-linkedin fa-2x wow bounceIn" style="padding-right:12px"></i>
+        </p>
       </div>
-    </footer>
+    </div>
+  </div>
+</aside>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<!---------------------------------------------- End of aside tag ------------------------------------------->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!--------------------------------------------- Footer section for file ----------------------------------------->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="span8">
+        <p class="text-muted" style="font-size:smaller">2015 © Avenues Placement Cell, Kirori Mal College. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+<!----------------------------------------- End footer ------------------------------------->
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
 
-  </body>
 
+<!--------------------------------------------  File links  -------------------------------------->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/wow.min.js"></script>
+
+<!-- Javascript file for accordion -->
+<script src="js/accordion.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/creative.js"></script>
+
+</body>
+<!-- end of bady tag -->
 </html>
