@@ -692,3 +692,8 @@ code {
     background-color: #f8f8f8;
      margin: 20px 0;
 }
+
+/* Removing the scroll-bar in navbar during mobile view */
+.navbar-collapse.in {
+    overflow-y: auto;
+}
