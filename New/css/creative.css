@@ -77,7 +77,7 @@ h6 {
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -671,4 +671,11 @@ code {
         filter:none !important;
          color:#ffffff !important;
     }
+}
+
+/* Code for carousel to have better design and wrapping of data */
+.carousel {
+  position: relative;
+  margin-bottom: 30px;
+  line-height: 1;
 }
