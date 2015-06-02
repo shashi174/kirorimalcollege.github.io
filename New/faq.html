@@ -35,14 +35,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+    <link rel="stylesheet" href="css/override.css" type="text/css">
 
+    <!-- Addtional charts.js addition -->
+    <script src="Chart.js"></script>
   </head>
 
   <body id="page-top">
 
-
-    <!-------------------------------------------   Navigation Bar starts here --------------------------------------->
-
+    <!--------------------------------------------  Navigation bar -------------------------------------->
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -92,7 +93,7 @@
                 <li class="sub-heading">
                   <a>Placements</a>
                 </li>
-                <li><a href="for_companies.html#header">Company Registration</a></li>
+                <li><a href="#">Company Registration</a></li>
                 <li><a href="#">Procedure and Policy</a></li>
                 <li><a href="#">Calendar</a></li>
                 <li><a href="#">Brochures</a></li>
@@ -140,128 +141,91 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <br>
-    <br>
-
     <!--------------------------------------------  End of navigation bar -------------------------------------->
 
-    <!----------------------------------------------   Header section  ----------------------------------------->
 
-    <header>
-      <div class="header-content">
-        <div class="header-content-inner">
-        </div>
-      </div>
-    </header>
-
-    <!----------------------------------------------  End of header section  ----------------------------------------->
-
-    <!---------------------------------------------- About this website section  ----------------------------------------->
+    <!-------------------------------------------  Breadcrumbs section starts here  ---------------------------->
     <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 text-center">
-            <h4 class="section-heading">Welcome to Avenues. The Placement cell of Kirori Mal College, University of Delhi</h4>
-            <hr class="light">
-          </div>
-
-        </div>
-        <p class="text-faded">This site provides all the necessary information that any prospective employer would look for. The range of information covers a brief introduction about the Institute and its broad spectrum of activities, various academic programmes, environment and facilities to the students, profile of the current batches of students in different programmes and placement procedure. </p>
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 text-center">
-
-            <!-- <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
-          </div>
+      <div class="breadcrumbs">
+        <div class="container">
+          <br>
+          <h2 class="section-heading text-left">Frequenty Asked Questions</h2><br>
+          <!-- <hr class="light" align="left" width="180px"><br> -->
         </div>
       </div>
     </section>
+    <!-------------------------------------------  Breadcrumbs section ends here  ---------------------------->
 
-    <!------------------------------------------    End of about website section  -------------------------------->
+    <!-----------------------------------  Main div container stars here  ------------------------------------>
 
-    <!------------------------------------------------ Main container starts  ---------------------------------->
-
-    <!------------------------------------------------  left container col-md-3  ---------------------------------->
-
-    <section id="services">
+    <section class="faq">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h3 class="section-heading">Quick links</h3>
-            <hr align="left" width="60%">
-            <ul class="list-unstyled">
-              <li><a href="#">Kirori Mal College Home</a></li>
-              <li>
-                <a href="#">Meet out Team</a>
-              </li>
-              <li>
-                <a href="#">Company Registration</a>
-              </li>
-              <li>
-                <a href="#">Placement Process</a>
-              </li>
-            </ul>
-            <br>
-            <br>
-            <h3 class="section-heading">Quick Contacts</h3>
-            <hr align="left" width="60%">
-            <ul class="list-unstyled">
-              <li><i class="fa fa-envelope-o fa-1x wow bounceIn" data-wow-delay=".1s">
-                  <a href="mailto:kmcavenues@gmail.com" style="font-size:smaller">kmcavenues@gmail.com</a></i>
-              </li><br>
-              <li>
-              <li><i class="fa fa-phone fa-1x wow bounceIn" data-wow-delay=".1s">
-                  <a href="tel:+91213645895" style="font-size:smaller">+91213645895</a></i>
-              </li>
-              </li><br>
-              <li>
-                <i class="fa fa-map-marker fa-1x wow bounceIn" data-wow-delay=".1s">
-                  <a href="#" style="font-size:smaller">Kirori Mal College. University of Delhi, North Campus, New Delhi, Delhi 110007</a></i>
-              </li>
-            </ul>
-            <br>
+        <p  class="text-left">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+        <button id="collapse-init" class="btn btn-primary">
+          Disable accordion behavior
+        </button>
+        <br/><br/>
+
+        <div class="panel-group" id="accordion">
+          <!-- First Panel -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"
+                  data-toggle="collapse"
+                  data-target="#collapseOne">
+                Collapsible Group Item #1
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit,
+                enim eiusmod high life accusamus terry richardson ad squid.
+              </div>
+            </div>
           </div>
 
-          <!------------------------------------------------ left container col-md-3 ends ------------------------------------->
+          <!-- Second Panel -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo">
+                Collapsible Group Item #2
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit,
+                enim eiusmod high life accusamus terry richardson ad squid.
+              </div>
+            </div>
+          </div>
 
-          <!------------------------------------------------ rignt container col-md-9 starts  ---------------------------------->
-
-          <div class="col-md-9">
-            <h3 class="section-heading">About Us</h3>
-            <hr align="left" width="16%">
-            <p style="font-size:smaller">Kirori Mal College, an institution of academic excellence, established in 1954, that has always strived to, and successfully maintained its place as one of the finest within the University of Delhi. We at Kirori Mal believe in providing for our students an environment rich in knowledge and supportive of their extracurricular interests.
-
-              The college encourages a quest for knowledge that is rooted in an ethical understanding of the world that we inhabit and this enthusiasm for learning along with a desire to evolve into socially responsible beings is reflected not only in the academic atmosphere but also visible in the field of extra-curricular activity. Our tradition of excellence in theatre, art and music only adds to the richness of the academic fabric of the college.</p>
-            <br>
-            <h3 class="section-heading">From the Principal's Desk</h3>
-            <hr align="left" width="38%">
-            <img class="display-picture-right" src="img/people/member-1.jpg">
-            <p style="font-size:smaller">Kirori Mal College began as Nirmala College, started by American Jesuits in the wake of Partition. It was located on Qutab Road. Faced with intractable problems related to the staff in the period following the Partition, the management of the College changed hands and the trust founded by Seth Kirori Mal took over the college. The College shifted to its present campus on 1 February 1954. Through the five eventful decades of its history, Kirori Mal College has celebrated the quest for expanding the landscapes of learning. Today, KMC stands for excellence and continuously sets the highest standards. The college is an alma mater which all alumni look back to with fond memories. Our College has given this country many distinguished personalities and leaders in diverse fields.
-            </p>
-            <blockquote class="hero">Kirori Mal is ideal for both academically-inclined students as well as those who are interested in sports and extra curricular activities</blockquote>
-            <br><a href="#" style="font-size:smaller">Read more..</a><br><br>
-
-            <h3 class="section-heading">From the Convener's Desk</h3>
-            <hr align="left" width="38%">
-            <img class="display-picture-left" src="img/people/member-1.jpg">
-            <p style="font-size:smaller">Kirori Mal College began as Nirmala College, started by American Jesuits in the wake of Partition. It was located on Qutab Road. Faced with intractable problems related to the staff in the period following the Partition, the management of the College changed hands and the trust founded by Seth Kirori Mal took over the college. The College shifted to its present campus on 1 February 1954. Through the five eventful decades of its history, Kirori Mal College has celebrated the quest for expanding the landscapes of learning. Today, KMC stands for excellence and continuously sets the highest standards. The college is an alma mater which all alumni look back to with fond memories. Our College has given this country many distinguished personalities and leaders in diverse fields.
-            </p>
-            <blockquote class="hero">Kirori Mal is ideal for both academically-inclined students as well as those who are interested in sports and extra curricular activities</blockquote>
-            <br>
-            <a href="#" style="font-size:smaller">Read more..</a>
-
+          <!-- Third Panel -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"
+                  data-toggle="collapse"
+                  data-target="#collapseThree">
+                Collapsible Group Item #3
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit,
+                enim eiusmod high life accusamus terry richardson ad squid.
+              </div>
+            </div>
           </div>
         </div>
-        <!------------------------------------------ rignt container col-md-9 starts  ---------------------------------->
 
-      </div>
 
-      <!-------------------------------------------------   Main container ends  -------------------------->
 
+      </div> <!-- End of the conatiner -->
     </section>
-    <br>
-    <br>
-    <!----------------------------------------------  End of main section  ------------------------->
 
+    <!-----------------------------------  Main div container ends here  ------------------------------------>
 
     <!------------------------------------------------ aside dark class footer starts  ---------------------------------->
 
@@ -321,32 +285,7 @@
 
     <!---------------------------------------------- End of aside tag ------------------------------------------->
 
-
-    <!------------------------------- Start of contact seciton of the index.html -------------------------------->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 text-center">
-            <h2 class="section-heading">Get In Touch!</h2>
-            <hr class="primary">
-            <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-          </div>
-          <div class="col-lg-4 col-lg-offset-2 text-center">
-            <i class="fa fa-phone fa-3x wow bounceIn">
-
-              <a href="tel:+91-123-456-789" style="font-size:15px"><br><p>123-456-6789</p></a></i>
-          </div>
-          <div class="col-lg-4 text-center">
-            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-            <p><a href="mailto:kmcavenues@gmail.com">kmcavenues@gmail.com</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!------------------------------- End of contact seciton of the index.html -------------------------------->
-
-
-    <!-- Footer section for file -->
+    <!--------------------------------------------- Footer section for file ----------------------------------------->
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -374,6 +313,9 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+
+    <!-- Javascript file for accordion -->
+    <script src="js/accordion.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>

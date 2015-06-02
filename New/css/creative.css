@@ -683,3 +683,10 @@ code {
   margin-bottom: 30px;
   line-height: 1;
 }
+
+/* Add styling to faq */
+
+.faq{
+    background-color: #f8f8f8;
+     margin: 20px 0;
+}
