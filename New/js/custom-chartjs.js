@@ -120,26 +120,6 @@
   //   }
   //   var myRadar = new Chart(document.getElementById("radarChart").getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 10});
 
-  //   // 5. Pie Chart
-  //   var pieData = [
-  //     {
-  //       value: 30,
-  //       color: $yellow
-  //     },
-  //     {
-  //       value : 50,
-  //       color : $info
-  //     },
-  //     {
-  //       value : 100,
-  //       color : $success
-  //     }
-
-  //   ];
-
-  //   var myPie = new Chart(document.getElementById("pieChart").getContext("2d")).Pie(pieData);
-
-
   // 6. Doughnut
 
   var doughnutData1 = [
@@ -176,6 +156,12 @@
 
   ];
 
+  var ctx1 = document.getElementById("chart-area1").getContext("2d");
+  window.myDoughnut1 = new Chart(ctx1).Doughnut(doughnutData1, options1);
+
+  // End of donought#1
+
+  // Donough #2
   var doughnutData2 = [
     {
       value: 300,
@@ -210,6 +196,55 @@
 
   ];
 
+  var ctx2 = document.getElementById("chart-area2").getContext("2d");
+  window.myDoughnut2 = new Chart(ctx2).Doughnut(doughnutData2, {responsive : true});
+
+  // End of Doughnut#2
+
+  // Doughnut#3
+
+  var doughnutData3 = [
+    {
+      value: 300,
+      color:"#F7464A",
+      highlight: "#FF5A5E",
+      label: "Red"
+    },
+    {
+      value: 50,
+      color: "#46BFBD",
+      highlight: "#5AD3D1",
+      label: "Green"
+    },
+    {
+      value: 100,
+      color: "#FDB45C",
+      highlight: "#FFC870",
+      label: "Yellow"
+    },
+    {
+      value: 40,
+      color: "#949FB1",
+      highlight: "#A8B3C5",
+      label: "Grey"
+    },
+    {
+      value: 120,
+      color: "#4D5360",
+      highlight: "#616774",
+      label: "Dark Grey"
+    }
+
+  ];
+
+  var ctx3 = document.getElementById("chart-area3").getContext("2d");
+  window.myDoughnut3 = new Chart(ctx3).Doughnut(doughnutData3, {responsive : true});
+
+  // End of Doughnut 3
+
+  // Pie Charts
+
+  // Piechart#1
   var pieData1 = [
     {
       value: 300,
@@ -244,107 +279,111 @@
 
   ];
 
+ var ctx4 = document.getElementById("chart-area4").getContext("2d");
+  window.myPie = new Chart(ctx4).Pie(pieData1, {responsive : true});
 
-  // 1. Bar Charts
-  // var data = {
-  //   labels: ["January", "February", "March", "April", "May", "June", "July"],
-  //   datasets: [
-  //     {
-  //       label: "My First dataset",
-  //       fillColor: "rgba(220,220,220,0.5)",
-  //       strokeColor: "rgba(220,220,220,0.8)",
-  //       highlightFill: "rgba(220,220,220,0.75)",
-  //       highlightStroke: "rgba(220,220,220,1)",
-  //       data: [65, 59, 80, 81, 56, 55, 40]
-  //     },
-  //     {
-  //       label: "My Second dataset",
-  //       fillColor: "rgba(151,187,205,0.5)",
-  //       strokeColor: "rgba(151,187,205,0.8)",
-  //       highlightFill: "rgba(151,187,205,0.75)",
-  //       highlightStroke: "rgba(151,187,205,1)",
-  //       data: [28, 48, 40, 19, 86, 27, 90]
-  //     }
-  //   ]
-  // };
+  // End of pie chart 1
 
-  // var ctx4 = document.getElementById("chart-area4").getContext("2d");
-  // var myBarChart = new Chart(ctx4).Bar(data, options);
+  // Piechart#2
+  var pieData2 = [
+    {
+      value: 300,
+      color:"#F7464A",
+      highlight: "#FF5A5E",
+      label: "Red"
+    },
+    {
+      value: 50,
+      color: "#46BFBD",
+      highlight: "#5AD3D1",
+      label: "Green"
+    },
+    {
+      value: 100,
+      color: "#FDB45C",
+      highlight: "#FFC870",
+      label: "Yellow"
+    },
+    {
+      value: 40,
+      color: "#949FB1",
+      highlight: "#A8B3C5",
+      label: "Grey"
+    },
+    {
+      value: 120,
+      color: "#4D5360",
+      highlight: "#616774",
+      label: "Dark Grey"
+    }
 
+  ];
 
-  // var doughnutData = [
-  //   {
-  //     value: 30,
-  //     color: $yellow
-  //   },
-  //   {
-  //     value : 50,
-  //     color : $success
-  //   },
-  //   {
-  //     value : 100,
-  //     color : $info
-  //   },
-  //   {
-  //     value : 40,
-  //     color : $warning
-  //   },
-  //   {
-  //     value : 120,
-  //     color : $gplus,
-  //   }
+ var ctx5 = document.getElementById("chart-area5").getContext("2d");
+  window.myPie2 = new Chart(ctx5).Pie(pieData2, {responsive : true});
 
-  // ];
+  // End of pie chart 2
 
-  // var myDoughnut = new Chart(document.getElementById("doughnutChart").getContext("2d")).Doughnut(doughnutData);
+  // Piechart#3
+  var pieData3 = [
+    {
+      value: 300,
+      color:"#F7464A",
+      highlight: "#FF5A5E",
+      label: "Red"
+    },
+    {
+      value: 50,
+      color: "#46BFBD",
+      highlight: "#5AD3D1",
+      label: "Green"
+    },
+    {
+      value: 100,
+      color: "#FDB45C",
+      highlight: "#FFC870",
+      label: "Yellow"
+    },
+    {
+      value: 40,
+      color: "#949FB1",
+      highlight: "#A8B3C5",
+      label: "Grey"
+    },
+    {
+      value: 120,
+      color: "#4D5360",
+      highlight: "#616774",
+      label: "Dark Grey"
+    }
 
+  ];
 
-  // bar chart data
-  // var barData = {
-  //   labels : ["January","February","March","April","May","June"],
-  //   datasets : [
-  //     {
-  //       fillColor : "#48A497",
-  //       strokeColor : "#48A4D1",
-  //       data : [456,479,324,569,702,600]
-  //     },
-  //     {
-  //       fillColor : "rgba(73,188,170,0.4)",
-  //       strokeColor : "rgba(72,174,209,0.4)",
-  //       data : [364,504,605,400,345,320]
-  //     }
-  //   ]
-  // }
-  // // get bar chart canvas
-  // var income = document.getElementById("income").getContext("2d");
-  // // draw bar chart
-  // new Chart(income).Bar(barData);
+ var ctx6 = document.getElementById("chart-area6").getContext("2d");
+  window.myPie3 = new Chart(ctx6).Pie(pieData3, {responsive : true});
+
+  // End of pie chart 3
 
 
   // Custom chart Js code ends here
-
-
-  var ctx1 = document.getElementById("chart-area1").getContext("2d");
-  window.myDoughnut = new Chart(ctx1).Doughnut(doughnutData1, {responsive : true});
-
-  var ctx2 = document.getElementById("chart-area2").getContext("2d");
-  window.myDoughnut = new Chart(ctx2).Doughnut(doughnutData2, {responsive : true});
-
-  var ctx3 = document.getElementById("chart-area3").getContext("2d");
-  window.myPie = new Chart(ctx3).Pie(pieData1, {responsive : true});
-
 
   window.onload = function(){
     ctx1();
     ctx2();
     ctx3();
-    // ctx4();
+    ctx4();
+    ctx5();
+    ctx6();
   };
 
-  var pieOptions = {
+  var options1 = {
     segmentShowStroke : false,
-    animateScale : true
-  }
+    animateScale : true,
+    responsive : true,
+    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+  };
+
+
   var width = $('canvas').parent().width();
   $('canvas').attr("width",width);
   new Chart(ctx).Line(data,options);
@@ -355,5 +394,27 @@
   };
 
   size(true);
+
+
+  // var legendHolder = document.getElementById('my-doughnut-legend')
+  // legendHolder.innerHTML = myDoughnut1.generateLegend();
+  // // Include a html legend template after the module doughnut itself
+  // helpers.each(legendHolder.firstChild.childNodes, function(legendNode, index){
+  //   helpers.addEvent(legendNode, 'mouseover', function(){
+  //     var activeSegment = myDoughnut1.segments[index];
+  //     activeSegment.save();
+  //     activeSegment.fillColor = activeSegment.highlightColor;
+  //     myDoughnut1.showTooltip([activeSegment]);
+  //     activeSegment.restore();
+  //   });
+  // });
+  // helpers.addEvent(legendHolder.firstChild, 'mouseout', function(){
+  //   myDoughnut1.draw();
+  // });
+  // canvas.parentNode.parentNode.appendChild(legendHolder.firstChild);
+
+
+  // myDoughnut1.generateLegend();
+  // document.getElementById('my-doughnut-legend').innerHTML = myDoughnut1.generateLegend();
 
 }());

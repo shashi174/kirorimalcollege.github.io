@@ -36,9 +36,46 @@ table, th, tr, td {
 }
 
 canvas{
-    height: 300px !important;
-    width: 300px !important;
+    height: 225px !important;
+    width: 225px !important;
     width: 100% !important;
     /* max-width: 400px; */
     /* height: auto !important; */
 }
+
+
+/* .doughnut-legend li span { */
+/*   display: block; */
+/*   width: 14px; */
+/*   height: 14px; */
+/*   border-radius: 7px; */
+/*   float: left; */
+/*   margin-top: 4px; */
+/*   margin-right: 8px; */
+/* } */
+
+/* .doughnut-legend { */
+/*   list-style: none; */
+/*   margin: 0; */
+/*   padding: 0; */
+/*   font-size: 14px; */
+/*   margin-top : 20px; */
+
+/* } */
+
+/* .doughnut-legend li { */
+/*   margin-bottom : 4px; */
+/* } */
+
+/* .doughnut-legend li:first-letter { */
+/*   text-transform: capitalize; */
+/* } */
+
+/* .comm-how { */
+/*   display: inline-block; */
+/*   float : left; */
+/*   color : #979797; */
+/*   width : 25px; */
+/*   text-align: right; */
+/*   margin-right : 10px; */
+/* } */
