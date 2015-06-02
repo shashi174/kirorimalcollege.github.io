@@ -7,12 +7,12 @@ $(function () {
             active = false;
             $('.panel-collapse').collapse('show');
             $('.panel-title').attr('data-toggle', '');
-            $(this).text('Enable accordion behavior');
+            $(this).text('hide all');
         } else {
             active = true;
             $('.panel-collapse').collapse('hide');
             $('.panel-title').attr('data-toggle', 'collapse');
-            $(this).text('Disable accordion behavior');
+            $(this).text('show all');
         }
     });
 

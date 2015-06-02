@@ -1,7 +1,7 @@
 /* Custom overide css for a generic template */
-header{
-    background-image: none !important;
-}
+/* header{ */
+/*     background-image: none !important; */
+/* } */
 @media(min-width:768px) {
     header {
         min-height: 0%;
@@ -61,4 +61,9 @@ canvas{
 
 .btn:focus,.btn:active {
    outline: none !important;
+}
+
+.panel-heading h4:hover,
+.panel-heading h4:focus {
+    color: red !important;
 }
