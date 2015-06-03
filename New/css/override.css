@@ -71,3 +71,13 @@ canvas{
 .panel-heading h4:focus {
     color: red !important;
 }
+
+.panel-department > .panel-heading {
+    background-color: #f05f40;
+    color: #fff;
+}
+
+.panel-department{
+    border-radius: 0 !important;
+     box-shadow: 0px 0px 9px #fafafa;
+}

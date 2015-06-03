@@ -764,7 +764,8 @@ code {
 }
 
 .social-linkedin {
-  background-color: #4875B4;
+    background-color: #645656;
+    /* #4875B4; */
   border-color: #466b99;
 }
 .social-linkedin:hover {
@@ -772,13 +773,14 @@ code {
   border-color: #3b5a7c;
 }
 
-.contact-linkedin{
-    width: 40px;
-    height: 40px;
-    padding: 12px 0px 20px !important;
+.contact-social{
+    /* width: 40px; */
+    /* height: 40px; */
+    /* padding: 12px 0px 20px !important; */
     font-size: 20px;
-    line-height: 0.5 !important;
+    /* line-height: 1.0 !important; */
     background-color: #aaa;
+    border-radius: 0 !important;
 }
 
 /* Normal logos */
