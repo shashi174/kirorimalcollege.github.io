@@ -80,22 +80,6 @@ canvas{
      box-shadow: 0px 0px 9px #fafafa;
 }
 
-.reachus-address {
-    line-height: 20px !important;
-    font-family: 'Ubuntu',sans-serif;
-}
-
-.reachus-address > a {
-    padding-top:2px;
-    color: #fafafa !important;
-    text-decoration: none;
-}
-
-.reachus-address > a:hover,
-.reachus-address > a:focus{
-    color: #f05f40 !important;
-}
-
 /* Change font to Ubuntu in the breadcrumbs section */
 .section-heading-ubuntu {
     font-family: 'Ubuntu',sans-serif !important;

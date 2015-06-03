@@ -800,6 +800,17 @@ body > .container {
     font-size: 14px !important;
 }
 
+.aside-ubuntu > a {
+    padding-top:2px;
+    color: #fafafa !important;
+    text-decoration: none;
+}
+
+.aside-ubuntu > a:hover,
+.aside-ubuntu > a:focus{
+    color: #f05f40 !important;
+}
+
 /* Google Maps */
 .form-map{
     color: #222;
@@ -841,4 +852,20 @@ input[type="color"]:focus,
   border-color: rgba(126, 239, 104, 0.8);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
   outline: 0 none;
+}
+
+.reachus-address {
+    line-height: 20px !important;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.reachus-address > a {
+    padding-top:2px;
+    color: #fafafa !important;
+    text-decoration: none;
+}
+
+.reachus-address > a:hover,
+.reachus-address > a:focus{
+    color: #f05f40 !important;
 }
