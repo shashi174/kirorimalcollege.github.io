@@ -28,6 +28,7 @@ body {
     text-decoration: none;
 }
 
+
 hr {
     max-width: 500px;
     border-color: #f05f40;
@@ -53,6 +54,7 @@ a {
     -moz-transition: all .35s;
     transition: all .35s;
     text-decoration: none;
+    font-family: Ubuntu;
 }
 
 .external-links > ul > li > a:hover,
@@ -650,14 +652,14 @@ html {
 }
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    /* margin-bottom: 60px */;
 }
 .footer {
     position: bottom;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 60px;
+    height: auto !important;
     background-color: #f5f5f5;
 }
 /* Custom page CSS
@@ -672,13 +674,13 @@ body > .container {
 }
 
 .footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
 }
 
-code {
-    font-size: 80%;
-}
+/* code { */
+/*     font-size: 80%; */
+/* } */
 
 /** Code for fixing the navbar in mobile view issue **/
 .dropdown-backdrop {
@@ -790,4 +792,53 @@ code {
 .logo:hover,
 .logo:focus{
     color: silver;
+}
+
+.aside-ubuntu{
+    font-family: 'Ubuntu',sans-serif !important;
+    font-weight:200;
+    font-size: 14px !important;
+}
+
+/* Google Maps */
+.form-map{
+    color: #222;
+    font-family: Ubuntu;
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+.form-group{
+    /* padding-bottom: 45px; */
+}
+
+.search-query{
+    padding: 10px 70px;
+    transition: none;
+    border-radius: 5px;
+}
+
+.search-query:focus{
+    background-color: #fff;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
 }
