@@ -700,6 +700,7 @@ code {
 
 /* Adding style to glyphicons */
 
+/* The social icons */
 .social-login-btn {
   margin: 5px !important;
   /* width: 12%; */
@@ -748,4 +749,13 @@ code {
 .social-linkedin:hover {
   background-color: #466b99;
   border-color: #3b5a7c;
+}
+
+/* Normal logos */
+.logo{
+    padding-right:12px;
+}
+.logo:hover,
+.logo:focus{
+    color: silver;
 }
