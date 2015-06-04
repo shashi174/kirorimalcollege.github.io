@@ -43,13 +43,14 @@
     <!-- Section courses offered starts here -->
     <!-- Please do not touch this section until it is absolutely necessary  -->
     <section>
-
+      <div class="container">
+        <div class="row">
       <div class="col-lg-8">
         <h3 class="section-heading text-left" id="demographic">Graduating Batch Demographics</h3>
         <hr align="left" width="50%"><br>
         <br><br><br>
 
-        <div class="col-lg-4">
+        <div class="col-md-4 col-sm-6">
           <div class="text-left">
             <div id="canvas-holder">
               <canvas id="chart-area1">
@@ -57,8 +58,9 @@
             </div><br><br>
             <p class="text-center">Bachelor of Arts</p>
           </div>
-        </div> <!-- End of col-lg-4 chart1 div -->
-        <div class="col-lg-4">
+        </div> <!-- End of -md-4 col-sm-6 chart1 div -->
+
+        <div class="col-md-4 col-sm-6">
           <div class="text-left">
             <div id="canvas-holder">
               <canvas id="chart-area2">
@@ -66,8 +68,9 @@
             </div><br><br>
             <p class="text-center">Bachelor of Commerce</p>
           </div>
-        </div><!-- End of col-lg-4 chart2 div -->
-        <div class="col-lg-4">
+        </div><!-- End of col-md-4 col-sm-6 chart2 div -->
+
+        <div class="col-md-4 col-sm-6">
           <div class="text-left">
             <div id="canvas-holder">
               <canvas id="chart-area3">
@@ -75,8 +78,9 @@
             </div><br><br>
             <p class="text-center">Bachelor of Science</p>
           </div>
-        </div><!-- End of col-lg-4 chart3 div -->
-        <div class="col-lg-4">
+        </div><!-- End of col-md-4 col-sm-6 chart3 div -->
+
+        <div class="col-md-4 col-sm-6">
           <br><br><br>
           <div class="text-left">
             <div id="canvas-holder">
@@ -85,8 +89,9 @@
             </div><br><br>
             <p class="text-center">Bachelor of Arts</p>
           </div>
-        </div><!-- End of col-lg-4 chart4 div -->
-        <div class="col-lg-4">
+        </div><!-- End of col-md-4 col-sm-6 chart4 div -->
+
+        <div class="col-md-4 col-sm-6">
           <br><br><br>
           <div class="text-left">
             <div id="canvas-holder">
@@ -95,8 +100,9 @@
             </div><br><br>
             <p class="text-center">Bachelor of Commerce</p>
           </div>
-        </div><!-- End of col-lg-4 chart5 div -->
-        <div class="col-lg-4">
+        </div><!-- End of col-md-4 col-sm-6 chart5 div -->
+
+        <div class="col-md-4 col-sm-6">
           <br><br><br>
           <div class="text-left">
             <div id="canvas-holder">
@@ -105,8 +111,10 @@
             </div><br><br>
             <p class="text-center">Bachelor of Science</p>
           </div>
-        </div><!-- End of col-lg-4 chart6 div -->
-      </div>  <!-- End of col-lg-8 div -->
+        </div><!-- End of col-md-4 col-sm-6 chart6 div -->
+
+      </div>  <!-- End of col-md-4 col-sm-6 div -->
+
 
       <div class="col-lg-4">
         <h3 class="section-heading text-left" id="courses">Courses Offered</h3>
@@ -228,23 +236,30 @@
           </tr>
         </table>
       </div>
+
+       </div> <!-- End of row -->
+      </div> <!-- End container -->
     </section>
 
     <!-- End of course offered section -->
 
     <section>
       <div class="container">
-         <h3 class="section-heading text-left" id="statistics">Placement Statistics</h3>
+        <div class="row">
+          <h3 class="section-heading text-left" id="statistics">Placement Statistics</h3>
           <hr align="left" width="22%"><br>
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="text-center">
-            <div id="canvas-holder" onload="createChart();">
-              <canvas id="myChart" width="700" height="400"></canvas>
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="text-center">
+              <div id="canvas-holder" onload="createChart();">
+                <canvas id="myChart" width="700" height="400"></canvas>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section><br><br>
+        </div> <!-- End row -->
+      </div>   <!-- End container -->
+    </section>
+
+    <br><br>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>

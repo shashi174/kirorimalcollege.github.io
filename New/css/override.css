@@ -122,9 +122,8 @@ canvas{
     overflow: hidden;
     height: auto !important;
 
-    background-color: #f8f8f8;
+    background-color: #fff;
     border-color:#000;
-    /* text-align: center; */
 }
 
 .responsive-iframe-container iframe {
