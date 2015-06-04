@@ -102,3 +102,18 @@ canvas{
 .reachus-container{
     padding-bottom: 25px;
 }
+
+.icon-quickcontacts + p {
+    display: inline !important;
+
+}
+
+.icon-para{
+    display: block !important;
+}
+
+.responsive-iframe-container{
+    background-color: #f8f8f8;
+    border-color:#000;
+    text-align: center;
+}
