@@ -42,11 +42,11 @@ table, th, tr, td {
 }
 
 canvas{
-    height: 225px !important;
-    width: 225px !important;
+    /* height: 225px !important; */
+    /* width: 225px !important; */
     width: 100% !important;
     /* max-width: 400px; */
-    /* height: auto !important; */
+    height: auto !important;
 }
 
 .faq{
