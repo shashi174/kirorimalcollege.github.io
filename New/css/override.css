@@ -116,20 +116,18 @@ canvas{
 /* Responsive iFrame */
 
 .responsive-iframe-container {
-
-
     position: relative;
     padding-bottom: 75%;
     height: 0;
     overflow: hidden;
+    height: auto !important;
+
     background-color: #f8f8f8;
     border-color:#000;
     /* text-align: center; */
 }
 
-.responsive-iframe-container iframe,
-.responsive-iframe-container object,
-.responsive-iframe-container embed {
+.responsive-iframe-container iframe {
     position: absolute;
     top:0;
     left: 0;
