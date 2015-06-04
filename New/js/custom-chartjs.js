@@ -12,6 +12,10 @@
 // var $gplus = "#dc4937";
 
 (function(){
+
+  var pixelRatio = window.devicePixelRatio || 1;
+  var width = 404 / pixelRatio;
+  var height = 404 / pixelRatio;
   // var t;
   // function size(animate){
   //   if (animate == undefined){
