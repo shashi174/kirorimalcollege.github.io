@@ -41,13 +41,37 @@ table, th, tr, td {
     padding-left: 5px;
 }
 
-canvas{
-    /* height: 225px !important; */
-    /* width: 225px !important; */
-    width: 100% !important;
-    /* max-width: 400px; */
-    height: auto !important;
+
+/* Canvas sizes for various devices: Mobile first method */
+
+/* Custom, iPhone Retina */ /* Extra Small Devices, Phones */  /* Small Devices, Tablets */
+@media only screen and (min-width : 320px),
+@media only screen and (min-width : 480px),
+@media only screen and (min-width : 768px) {
+
+    canvas{
+        /* height: 225px !important; */
+        /* width: 225px !important; */
+        width: 100% !important;
+        /* max-width: 400px; */
+        /* height: auto !important; */
+    }
+    }
+
+ /* Medium Devices, Desktops *//* Large Devices, Wide Screens */
+@media only screen and (min-width : 992px),
+@media only screen and (min-width : 1200px) {
+
+    canvas{
+        height: 225px !important;
+        width: 225px !important;
+        width: 100% !important;
+        /* max-width: 400px; */
+        /* height: auto !important; */
+    }
 }
+
+/* End of canvas customization */
 
 .faq{
     background-color: #fff;
