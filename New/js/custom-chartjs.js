@@ -157,7 +157,7 @@
   ];
 
   var ctx1 = document.getElementById("chart-area1").getContext("2d");
-  window.myDoughnut1 = new Chart(ctx1).Doughnut(doughnutData1, options1);
+  window.myDoughnut1 = new Chart(ctx1).Doughnut(doughnutData1, options);
 
   // End of donought#1
 
@@ -197,7 +197,7 @@
   ];
 
   var ctx2 = document.getElementById("chart-area2").getContext("2d");
-  window.myDoughnut2 = new Chart(ctx2).Doughnut(doughnutData2, {responsive : true});
+  window.myDoughnut2 = new Chart(ctx2).Doughnut(doughnutData2, options);
 
   // End of Doughnut#2
 
@@ -238,7 +238,7 @@
   ];
 
   var ctx3 = document.getElementById("chart-area3").getContext("2d");
-  window.myDoughnut3 = new Chart(ctx3).Doughnut(doughnutData3, {responsive : true});
+  window.myDoughnut3 = new Chart(ctx3).Doughnut(doughnutData3, options);
 
   // End of Doughnut 3
 
@@ -280,7 +280,7 @@
   ];
 
  var ctx4 = document.getElementById("chart-area4").getContext("2d");
-  window.myPie = new Chart(ctx4).Pie(pieData1, {responsive : true});
+  window.myPie = new Chart(ctx4).Pie(pieData1, options);
 
   // End of pie chart 1
 
@@ -320,7 +320,7 @@
   ];
 
  var ctx5 = document.getElementById("chart-area5").getContext("2d");
-  window.myPie2 = new Chart(ctx5).Pie(pieData2, {responsive : true});
+  window.myPie2 = new Chart(ctx5).Pie(pieData2, options);
 
   // End of pie chart 2
 
@@ -360,7 +360,7 @@
   ];
 
  var ctx6 = document.getElementById("chart-area6").getContext("2d");
-  window.myPie3 = new Chart(ctx6).Pie(pieData3, {responsive : true});
+  window.myPie3 = new Chart(ctx6).Pie(pieData3, options);
 
   // End of pie chart 3
 
@@ -376,9 +376,10 @@
     ctx6();
   };
 
-  var options1 = {
+  var options = {
     segmentShowStroke : false,
     animateScale : true,
+    maintainAspectRatio: false,
     responsive : true,
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
   };

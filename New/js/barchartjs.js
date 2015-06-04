@@ -70,11 +70,22 @@
   options = {
     barDatasetSpacing : 15,
     barValueSpacing: 10,
+    maintainAspectRatio: false,
     scaleShowVerticalLines: true,
     barShowStroke : true,
     scaleFontColor: "#000",
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
   };
+
+  // Some custom tweaks to get it more responsive
+  //  var width = $('canvas').parent().width();
+  // $('canvas').attr("width",width);
+  // new Chart(ctx).Line(data,options);
+  // window.onresize = function(event){
+  //   var width = $('canvas').parent().width();
+  //   $('canvas').attr("width",width);
+  //   new Chart(ctx).Line(data,options);
+  // };
 
   //Create the chart
   new Chart(ctx).Bar(data, options);
