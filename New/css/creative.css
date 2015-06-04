@@ -816,15 +816,19 @@ body > .container {
     color: #222;
     font-family: Ubuntu;
     font-size: 14px;
-    padding-bottom: 18px;
+    /* padding-bottom: 18px; */
 }
 
 .form-group{
-    /* padding-bottom: 45px; */
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .search-query{
-    padding: 10px 70px;
+    width: 100%;
+    padding: 12px;
+    padding-right: 270px;
     transition: none;
     border-radius: 5px;
 }
