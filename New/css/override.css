@@ -86,3 +86,19 @@ canvas{
     font-weight:200;
     font-size: 35px;
 }
+
+.third-color-kbd{
+    color: #4D4949;
+    background-color: #BCBCBC;
+    border-radius: 0;
+}
+
+.reachus-section{
+   padding: 50px 0 !important;
+   margin-top: 0;
+   margin-bottom: none !important;
+}
+
+.reachus-container{
+    padding-bottom: 25px;
+}
