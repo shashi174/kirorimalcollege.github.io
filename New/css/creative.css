@@ -892,3 +892,12 @@ input[type="color"]:focus,
     table-layout: fixed;
     over-wrap: break-word;
 }
+
+/* Medium Devices, Desktops *//* Large Devices, Wide Screens */
+canvas{
+    height: 225px !important;
+    width: 225px !important;
+    width: 100% !important;
+    /* max-width: 400px; */
+    /* height: auto !important; */
+}
