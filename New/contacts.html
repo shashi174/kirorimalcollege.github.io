@@ -425,7 +425,7 @@
                 <form action="http://maps.google.com/maps" method="get" target="_blank" class="form-map">
                   <div class="form-group">
                     <label class="sr-only" for="saddr">Please enter your location</label>
-                    <input  class="search-query" type="text" class="form-control"  name="saddr" placeholder="Please enter your location">
+                    <input  class="search-query" type="text" id="saddr" class="form-control" data-toggle="tooltip" data-placement="top" title="Tip: Type mylocation to get location from your place" name="saddr" placeholder="Please enter your location">
                     <input type="hidden" name="daddr" value="Kirori Mal College, University of Delhi, North Campus, New Delhi, Delhi 110007" />
                   </div>
               </div>
@@ -568,13 +568,14 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <!-- Custom Javascript for tooltips -->
+    <script src="js/tooltip.js"></script>
 
     <!-- Scripts for chart js -->
     <script src="js/Chart.min.js"></script>
     <script src="js/Chart.js"></script>
     <script type="text/javascript" src="js/custom-chartjs.js"></script>
+    <script type="text/javascript" src="js/barchartjs.js"></script>
+
   </body>
-  <script type="text/javascript" src="js/barchartjs.js"></script>
-
-
 </html>

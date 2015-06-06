@@ -704,7 +704,7 @@ body {
     }
 }
 
-Code for carousel to have better design and wrapping of data
+/* Code for carousel to have better design and wrapping of data */
 .carousel {
     position: relative;
     margin-bottom: 30px;
