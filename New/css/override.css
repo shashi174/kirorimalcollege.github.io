@@ -13,19 +13,19 @@
     /* background: url(../img/breadcrumbs.png) repeat; */
 }
 
-section {
-    padding: 70px  0 !important;
-    /* margin-top:-40px  !important; */
-    /* padding: 42px 0px 0px 0px !important; */
-    margin-bottom: auto !important;
-}
+/* section { */
+/*     padding: 70px  0 !important; */
+/*     /\* margin-top:-40px  !important; *\/ */
+/*     /\* padding: 42px 0px 0px 0px !important; *\/ */
+/*     margin-bottom: auto !important; */
+/* } */
 
-aside {
-    padding: 70px 0 !important;
-    /* margin-top:-40px  !important; */
-    /* padding: 42px 0px 0px 0px !important; */
-    margin-bottom: auto !important;
-}
+/* aside { */
+/*     padding: 70px 0 !important; */
+/*     /\* margin-top:-40px  !important; *\/ */
+/*     /\* padding: 42px 0px 0px 0px !important; *\/ */
+/*     margin-bottom: auto !important; */
+/* } */
 .footer{
     overflow: hidden;
     margin: 0px !important;
