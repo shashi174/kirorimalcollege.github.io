@@ -27,7 +27,6 @@ $('[href^=#]').not('#carousel-example-generic a').click(function() {
 })(jQuery);
 
 
-
 //=================================== SMOOTH SCROLLING EXTERNAL ANCHOR //
 // (function($){
 
