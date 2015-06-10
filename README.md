@@ -16,7 +16,7 @@ Start Bootstrap was created by and is maintained by **Abhinav Saxena**.
 
 * https://github.com/spunkpike
 
-This website is built with Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+This website is built on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
 ## Copyright and License
 
