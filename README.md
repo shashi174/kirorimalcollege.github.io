@@ -12,7 +12,7 @@ Have a bug or an issue with this theme? [Open a new issue](#) here on GitHub.
 
 ## Creator
 
-Start Bootstrap was created by and is maintained by **Abhinav Saxena**.
+This website was created and is maintained by **Abhinav Saxena**.
 
 * https://github.com/spunkpike
 
