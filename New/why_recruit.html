@@ -40,14 +40,14 @@
     <!-- For carousel stylesheet -->
     <link rel="stylesheet" href="css/slider.css" type="text/css">
 
-    <!-- Addtional charts.js addition -->
-    <script src="Chart.js"></script>
+    <!-- <\!-- Addtional charts.js addition -\-> -->
+    <!-- <script src="Chart.js"></script> -->
 
-    <!-- scrollReveal.js -->
-    <script src="js/scrollReveal.min.js"></script>
-    <script>
-      window.sr = new scrollReveal();
-    </script>
+    <!-- <\!-- scrollReveal.js -\-> -->
+    <!-- <script src="js/scrollReveal.min.js"></script> -->
+    <!-- <script> -->
+    <!--   window.sr = new scrollReveal(); -->
+    <!-- </script> -->
 
   </head>
 
@@ -159,16 +159,16 @@
 
     <!-------------------------------------------- About Kirori Mal College section  ---------------------------->
 
-    <section data-sr id="aboutkmc">
+    <section id="aboutkmc">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <h3 class="section-heading text-left">About Kirori Mal College</h3>
             <hr align="left" width="50%">
-            <p  class="text-left" style="font-size:smaller">
+            <p  data-sr class="text-left" style="font-size:smaller">
               Kirori Mal College is a co-educational constituent and a part of north campus, University of Delhi. It has successfully maintained its place as one of the finest within the University of Delhi.The College maintains its own tradition of celebrating Founders’ Day, Annual Day & Graduate Farewell Dinner.The College has been honouring the staff members who have rendered 25 years of their services in the college. Various events are organized in the college annually by debsoc, musoc, fostas, sensation, film society and the round table etc. College provides financial assistance to its deserving students. The College has about 5200 students on its roll out of which 170 live in the Hostel.Kirori Mal College also Shined in NASA while participating in NASA Lunabotics Competition 2013 in Kennedy Space Centre, Florida and won two prizes. In 2014,the team has undertaken two projects and the team has been invited for the University Rover Challenge (URC), world’s premier robotics event for college students.
             </p>
-            <p  class="text-left" style="font-size:smaller">
+            <p data-sr class="text-left" style="font-size:smaller">
               Kirori Mal College began as Nirmala College, started by American Jesuits in the wake of partition. It was located on Qutub Road. Faced with intractable problems relating to the staff in the period following the partition, the management of the college changed hands and the trust founded by Seth Kirori Mal took over the college. The college shifted to its present campus on 1 February 1954.The college celebrated its Golden Jubilee in February 2004 with Amitabh Bachchan (alumnus of the college) as its chief guest.
             </p><br><br>
             <b><u>Imp Note:</u> When resetting the images, make sure to crop it in 4:3 aspect ratio and the put it in img/college folder with appropriate name. Res should be 500x322 px</b><br><br>
@@ -211,7 +211,7 @@
             <h3 class="section-heading text-left" id="demographic">Graduating Batch Demographics</h3>
             <hr align="left" width="48%"><br>
             <br><br><br>
-            <div class="row">
+            <div data-sr class="row">
               <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="text-left">
                   <div id="canvas-holder">
@@ -241,7 +241,7 @@
               </div><!-- End of col-md-4 chart3 div -->
             </div><!-- End of row 1 consisting 3 doughnut charts -->
 
-            <div class="row">
+            <div data-sr class="row">
               <div class="col-md-4 col-sm-12 col-xs-12">
                 <br><br><br>
                 <div class="text-left">
@@ -280,8 +280,8 @@
           <div class="col-md-4 col-sm-12 col-xs-12">
             <h3 class="section-heading text-left" id="courses">Courses Offered</h3>
             <hr align="left" width="190px"><br>
-            <p class="text-center"><b>Arts:</b></p>
-            <table class="table table-condensed">
+            <p data-sr class="text-center"><b>Arts:</b></p>
+            <table data-sr class="table table-condensed">
               <tr>
                 <td>
                   B.A.(Hons) Economics
@@ -334,8 +334,8 @@
               </tr>
             </table>
             <!-- Commerce Table -->
-            <p class="text-center"><b>Commerce:</b></p>
-            <table class="table table-condensed">
+            <p data-sr class="text-center"><b>Commerce:</b></p>
+            <table data-sr class="table table-condensed">
               <tr>
                 <td>
                   B.Com(Hons)
@@ -348,8 +348,8 @@
               </tr>
             </table>
 
-            <p class="text-center"><b>Sciences:</b></p>
-            <table class="table table-condensed">
+            <p data-sr class="text-center"><b>Sciences:</b></p>
+            <table data-sr class="table table-condensed">
               <tr>
                 <td>
                   B.Sc.(Hons) Mathematics
@@ -410,7 +410,7 @@
         <div class="row">
           <h3 class="section-heading text-left" id="statistics">Placement Statistics</h3>
           <hr align="left" width="22%"><br />
-          <div class="col-lg-8 col-lg-offset-2">
+          <div data-sr class="col-lg-8 col-lg-offset-2">
             <div class="text-center">
               <div class="canvas-holder">
                 <canvas id="barChart" height="250" width="250"></canvas>
@@ -708,6 +708,20 @@
     <script type="text/javascript" src="js/custom-chartjs.js"></script>
     <script type="text/javascript" src="js/barchartjs.js"></script>
 
+    <!-- Addtional charts.js addition -->
+    <script src="Chart.js"></script>
+
+    <!-- scrollReveal.js -->
+    <script src="js/scrollReveal.min.js"></script>
+    <script>
+      window.sr = new scrollReveal();
+    </script>
+
+    <!-- scroll speed addition -->
+    <!-- <script src="jQuery.scrollSpeed.js"></script> -->
+    <!-- <script> -->
+
+    <!-- </script> -->
   </body>
 
 </html>
