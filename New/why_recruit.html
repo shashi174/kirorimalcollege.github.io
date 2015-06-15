@@ -42,9 +42,17 @@
 
     <!-- Addtional charts.js addition -->
     <script src="Chart.js"></script>
+
+    <!-- scrollReveal.js -->
+    <script src="js/scrollReveal.min.js"></script>
+    <script>
+      window.sr = new scrollReveal();
+    </script>
+
   </head>
 
   <body id="page-top">
+
 
     <!--------------------------------------------  Navigation bar -------------------------------------->
 
@@ -72,7 +80,7 @@
                 <li><a href="#page-top">Why Recruit?</a></li>
                 <li><a href="#faculty">Faculty</a></li>
                 <li><a href="#demographics">Demographics</a></li>
-                <li><a href="#demographics">Course Offered</a></li>
+                <li><a href="#courses">Course Offered</a></li>
                 <li><a href="#statistics">Placement Statistics</a></li>
                 <li><a href="#culturals">Culturals and Extra Curriculars</a></li>
                 <li><a href="#alumni">Alumni</a></li>
@@ -151,7 +159,7 @@
 
     <!-------------------------------------------- About Kirori Mal College section  ---------------------------->
 
-    <section id="aboutkmc">
+    <section data-sr id="aboutkmc">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -178,13 +186,13 @@
     <!-----------------------------------  End of about kmc  ---------------------------------->
 
     <!------------------------------------  Start of faculty section   ------------------------->
-    <section class="bg-primary" id="faculty">
+    <section data-sr class="bg-primary" id="faculty">
       <div class="container">
-        <h3 class="section-heading text-left">Faculty</h3>
+        <h3 data-sr class="section-heading text-left">Faculty</h3>
         <hr align="left" width="8%">
-        <p  class="text-left">
+        <p  data-sr class="text-left">
           Faculty members having degrees from the renowned universities across the world. The Faculty at Kirori Mal College are involved in cutting-edge research both in the industry and within college and also holds positions as varied as editors of various international journals, visiting faculty in many universities, advisors to government and industry.</p>
-        <p  class="text-left">
+        <p  data-sr class="text-left">
           Standard lorem text starts here.
           There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.ed chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
         </p><br>
@@ -209,7 +217,7 @@
                   <div id="canvas-holder">
                     <canvas id="chart-area1">
                     </canvas><br>
-                  </div><br><br>
+                  </div>
                   <p class="text-center">Bachelor of Arts</p>
                 </div>
               </div> <!-- End of col-md-4 chart1 div -->
@@ -218,7 +226,7 @@
                   <div id="canvas-holder">
                     <canvas id="chart-area2">
                     </canvas><br>
-                  </div><br><br>
+                  </div>
                   <p class="text-center">Bachelor of Commerce</p>
                 </div>
               </div><!-- End of col-md-4 chart2 div -->
@@ -227,7 +235,7 @@
                   <div id="canvas-holder">
                     <canvas id="chart-area3">
                     </canvas><br>
-                  </div><br><br>
+                  </div>
                   <p class="text-center">Bachelor of Science</p>
                 </div>
               </div><!-- End of col-md-4 chart3 div -->
@@ -240,7 +248,7 @@
                   <div id="canvas-holder">
                     <canvas id="chart-area4">
                     </canvas><br>
-                  </div><br><br>
+                  </div>
                   <p class="text-center">Bachelor of Arts</p>
                 </div>
               </div><!-- End of col-md-4 chart4 div -->
@@ -250,7 +258,7 @@
                   <div id="canvas-holder">
                     <canvas id="chart-area5">
                     </canvas><br>
-                  </div><br><br>
+                  </div>
                   <p class="text-center">Bachelor of Commerce</p>
                 </div>
               </div><!-- End of col-md-4 chart5 div -->
@@ -260,7 +268,7 @@
                   <div id="canvas-holder">
                     <canvas id="chart-area6">
                     </canvas><br>
-                  </div><br><br>
+                  </div>
                   <p class="text-center">Bachelor of Science</p>
                 </div>
               </div><!-- End of col-md-4 chart6 div -->
@@ -398,20 +406,20 @@
     <!-- End of course offered section -->
 
     <section id="statistics">
-        <div class="container">
-            <div class="row">
-                <h3 class="section-heading text-left" id="statistics">Placement Statistics</h3>
-                <hr align="left" width="22%"><br />
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="text-center">
-                        <div class="canvas-holder">
-                            <canvas id="barChart" height="250" width="250"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End row -->
-        </div><!-- End container -->
-    </section><br><br>
+      <div class="container">
+        <div class="row">
+          <h3 class="section-heading text-left" id="statistics">Placement Statistics</h3>
+          <hr align="left" width="22%"><br />
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="text-center">
+              <div class="canvas-holder">
+                <canvas id="barChart" height="250" width="250"></canvas>
+              </div>
+            </div>
+          </div>
+        </div><!-- End row -->
+      </div><!-- End container -->
+    </section>
 
 
     <!------------------------------------------ End of the statistics section  -------------------------------------->
@@ -479,9 +487,9 @@
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <!------- Code for the section carousel ----->
-              <!-- The carousel -->
-              <hr class="transition-timer-carousel-progress-bar" />
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- The carousel -->
+            <hr class="transition-timer-carousel-progress-bar" />
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
               <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -522,44 +530,44 @@
                 </div>
               </div>
 
-             <!-- Controls -->
-             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-               <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
-               <span class="sr-only">Previous</span>
-             </a>
-             <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-               <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
-               <span class="sr-only">Next</span>
-             </a>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+                <span class="sr-only">Next</span>
+              </a>
             </div><!-- Carousel -->
 
           </div><!-- End div col-md-6 col-sm-12 -->
 
-           <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-12">
 
-          <p style="font-size:smaller"><strong>Festivals</strong></p>
-          <p style="font-size:smaller"> The festivals provide a unique opportunity  where the students can experience management lessons first hand. Right from the  stage of conceptualization to final implementation the students manage  everything on their own. The organizing team gets to interact and deal with  corporate, celebrities and hence inculcate managerial and inter-personal skills.</p>
-          <p style="font-size:smaller"><strong>Societies</strong></p>
-          <p style="font-size:smaller">Along with all the other societies, the college also has department societies which organize
-            their inter department fests every year and manage their editorial boards too.</p>
-          <ul style="font-size:smaller" class="list-inline">
-            <li>• Ecosoc (Economics)</li>
-            <li>• Comsoc (Commerce)</li>
-            <li>• Chemistry Society</li>
-            <li>• Geography Society</li>
-            <li>• History Society</li>
-            <li>• Tensors (Mathematici)</li>
-            <li>• Statistics Society</li>
-            <li>• La Politique (Political Science)</li>
-            <li>• Sanskrit Bharati</li>
-            <li>• Hindi Sahitya Parisiad / Sangoshthi / Ahwan</li>
-            <li>• Grub Street (English)</li>
-            <li>• Robophysicists / Lunabotics (Physics)</li>
-            <li>• Medini</li>
-          </ul>
+            <p style="font-size:smaller"><strong>Festivals</strong></p>
+            <p style="font-size:smaller"> The festivals provide a unique opportunity  where the students can experience management lessons first hand. Right from the  stage of conceptualization to final implementation the students manage  everything on their own. The organizing team gets to interact and deal with  corporate, celebrities and hence inculcate managerial and inter-personal skills.</p>
+            <p style="font-size:smaller"><strong>Societies</strong></p>
+            <p style="font-size:smaller">Along with all the other societies, the college also has department societies which organize
+              their inter department fests every year and manage their editorial boards too.</p>
+            <ul style="font-size:smaller" class="list-inline">
+              <li>• Ecosoc (Economics)</li>
+              <li>• Comsoc (Commerce)</li>
+              <li>• Chemistry Society</li>
+              <li>• Geography Society</li>
+              <li>• History Society</li>
+              <li>• Tensors (Mathematici)</li>
+              <li>• Statistics Society</li>
+              <li>• La Politique (Political Science)</li>
+              <li>• Sanskrit Bharati</li>
+              <li>• Hindi Sahitya Parisiad / Sangoshthi / Ahwan</li>
+              <li>• Grub Street (English)</li>
+              <li>• Robophysicists / Lunabotics (Physics)</li>
+              <li>• Medini</li>
+            </ul>
 
-             </div>
-        </div> <!-- row div --><br><br>
+          </div>
+        </div> <!-- row div -->
       </div>
     </section>
 
